@@ -23,3 +23,8 @@ p.reasoning {
 p.caption {
     color: indigo;
 }
+
+img {
+    width: 300px;
+    height: 520px;
+}
