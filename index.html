@@ -1,82 +1,169 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title> Edward Abbey </title>
-        <link rel="stylesheet" href="abbeystyles.css">
-    </head>
-    <body> 
-        <div class="header-container">
-            <img src="images/desert_panorama.jpg" class="header-img">
-            <h1> Edward Abbey: A Life </h1>
-        </div>
-        <hr>
-        <div class = "quote">
-            <p>
-                <em><strong>
-                "May your trails be crooked, winding, 
-                lonesome, dangerous, leading to the most amazing view. 
-                May your mountains rise into and above the clouds." </strong></em><br> 
-                - <a href="https://www.indiebound.org/book/9780671695880"> Desert Solitaire</a>, by Edward Abbey
-            </p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Riga</title>
+    <meta name="Alice's City Guide" content="My webpage talks about my favorite places in and around the city of Riga,
+        Latvia, where part of my family is from. It includes guides to hotspots and beautiful scenery, but most importantly
+        the places that I love the most. It also incudes an interactive map and quick guide to useful Latvian phrases." />
+
+  </head>
+  <body>
+      <img src="images/riga-pano.jpg" style="width: 100%; opacity: 60%;" alt="riga skyline" class="img-header">
+    <h1><abbr title="Riga, Latvija">Riga, Latvia</abbr></h1>
+
+    <!-- Table of Contents/Navigator -->
+    <nav class="nav-bar">
+        <a href="#interactive-map">Interactive Map</a> |
+        <a href="#useful-phrases">Useful Phrases</a> |
+        <a href="#eating">Food</a> |
+        <a href="#love">Favorite Spots</a> |
+        <a href="#celebration">Song and Dance Celebration</a> |
+        <a href="#contact">Contact Form</a>
+    </nav>
+    <hr>
+
+    <!-- Embedded Google Maps -->
+    <h2 id="interactive-map">Interactive Map</h2>
+    <div id="map" style="height: 350px; width: 600px;" class="embedded-map"></div>
+    <hr>
+
+    <!-- ****** BELOW CODE USED/ADAPTED FROM EXAMPLE FOUND AT https://developers.google.com/maps/documentation/javascript/adding-a-google-map  ****** -->
+    <script>
+        function initMap() {
+            const riga= { lat: 56.9515, lng: 24.1132 };
+            const map = new google.maps.Map(document.getElementById("map"), { zoom: 12, center: riga});
+            const marker = new google.maps.Marker({ position: riga, map: map}); }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBN0s2zT_9kUTNlDNm60Uo-bQNV_g3Yvc&callback=initMap&libraries=&v=weekly" async
+    ></script>
+    <!-- ****** CITED CODE ENDS ****** -->
+
+
+    <!-- Useful phrases translated -->
+    <div id="useful-phrases">
+        <h2>Useful phrases</h2>
+        <table id="translator-table" style="border: 2px solid darkslategray;">
+            <thead>
+                <tr>
+                    <th>English</th>
+                    <th>Latvian</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hello</td>
+                    <td>Sveiki</td>
+                </tr>
+                <tr>
+                    <td>Thanks</td>
+                    <td>Paldies</td>
+                </tr>
+                <tr>
+                    <td>You're (very) welcome / Please</td>
+                    <td>Lūdzu</td>
+                </tr>
+                <tr>
+                    <td>Good morning/day/night</td>
+                    <td>Labrīt / Labdien / Labvakar</td>
+                </tr>
+                <tr>
+                    <td>I don't speak Latvian</td>
+                    <td>Es nerunāju latviski</td>
+                </tr>
+            </tbody>
+            </table>
+    </div>
+    <hr>
+
+    <!-- Places to eat or get food -->
+    <div class="food" id="eating">
+        <h2>Food</h2>
+        <img src="images/market.jpg" alt="riga central market">
+        <h3><em><abbr title="Rigas Centraltirgus">Riga Central Market</abbr></em></h3>
+        <h4>Cost: $ | <a href="https://www.latvia.travel/en/sight/riga-central-market" target="_blank">Learn More</a></h4>
+        <h4>Monday-Saturday: 8:00am-6:00pm, Sunday: 8:00am-5:00pm</h4>
+        <ul>
+            <li>A large collection of marketplaces, set in a historic site with very old and pretty architecture.</li>
+            <li>A good place to get cheap, fresh seafood for meals.</li>
+            <li>Warning: You must be careful of pickpocketers! And if you are foreign you will probably be upsold.</li>
+          </ul>
+    </div>
+    <hr>
+
+    <!-- Favorite places -->
+    <div class="favorite-spots" id="love">
+        <h2>Favorite Spots</h2>
+        <div class="canal">
+            <img src="images/canal-district.jpg" alt="canal district">
+            <h3><em><abbr title="Pilsetas Kanals">City Canal</abbr></em></h3>
+            <h4>Cost: $$ | <a href="https://www.lonelyplanet.com/latvia/riga/attractions/pilsetas-kanals-city-canal/a/poi-sig/1466253/360099" target="_blank">Boat Tours</a></h4>
+            <ul>
+                <li>Formerly an old moat, Riga's City Canal is now a favorite spot for leisure.</li>
+                <li>Banked on either side by lovely stretches of green and tall trees, this spot of nature offers a refuge from city bustle.</li>
+                <li>I have loved sitting near the canal and having picnics with my family; you will too!</li>
+              </ul>
         </div>
 
-        <div class="left-panel">
-            <img src="images/desert_abbey.jpg" class="inthedesert-img">
-            <figcaption> In Arizona </figcaption>
+        <div class="jurmula">
+            <img src="images/jurmula.jpg" alt="baltic beach">
+            <h3><em><abbr title="Jurmula">The Beach</abbr></em></h3>
+            <h4>Cost: 0 [car], $ [train] | <a href="https://www.latvia.travel/en/city/jurmala-8" target="_blank">More Info</a></h4>
+            <ul>
+                <li>A quick train ride--or car ride--out of Riga will take you to lovely sands in Jūrmala on the Gulf of Riga.</li>
+                <li>You can easily find little pieces of amber scattered among the shells. </li>
+                <li>It is very cold, even in the summer--be ready and bring towels!</li>
+              </ul>
         </div>
+    </div>
+    <hr>
 
-        <div class="middle-panel">
-            <h2 class="left"><strong> Overview</strong></h2>
-            <p>
-                Edward Abbey was born in Pennsylvania on January 29th, 1927, and died on March 14th, 1989.
-            </p>
-            <p>
-                Best known for his conservation work and writing, Edward Abbey has long been considered a towering
-                figure among environmentalists, known for his uncompromising conservation stances and anarchistic tendencies. His writing, so eloquent 
-                and powerful, evoked adventure in his readers, and his crass humor and middle finger to 
-                the establishment provided a sense of camaraderie. 
-            </p>
-            <p>
-                His spirit lives on through his writings, and his soul in the desert; disregarding all state and federal laws,
-                fittingly enough, his friends buried him illegally in the 
-                <abbr title="Cabeza Prieta National Wildlife Refuge"> Cabeza Prieta Desert. </abbr>
-            </p>
-            <p>
-                His last message, to give to anyone asking about his final words: "No comment."
-                <a class="footnote" href="https://en.wikipedia.org/wiki/Edward_Abbey#Death_and_burial">1</a>
-            </p>
-        </div>
+    <!-- Song and dance festival -->
+    <div class="song-and-dance-celebration" id="celebration">
+        <h2>Nationwide Song and Dance Celebration</h2>
+        <img src="images/song-1.jpg" alt="song and dance festival traditional outfits">
+        <img src="images/freedom-1.jpg" alt="riga freedom monument">
+        <img src="images/song-2.jpg" alt="song and dance festival ampitheater">
+        <h3><em><abbr title="Rigas Centraltirgus">Song and Dance Celebration</abbr></em></h3>
+        <h4>Cost: $$$ (in person), FREE (streaming) | <a href="https://www.latvia.travel/en/article/song-and-dance-celebration" target="_blank">Learn More</a></h4>
+        <h4>Next: July 2023</h4>
+        <ul>
+            <li>The most important cultural event in Lativa; held every four years, the Song and Dance Celebration is a gathering
+                of 30,000 Latvians singing traditional songs in unison, wearing traditional Latvian garb.
+            </li>
+            <li>During occupations (especially Soviet) one of the few sanctioned group meetings were for choral gatherings.
+                Here, singing traditional Latvian songs kept pride in and love for Latvia strong, and also allowed men and women
+                to covertly pass information about the status of their hometowns.
+            </li>
+            <li>I have never seen this live, but I've watched the stream, and cried; it is incredible to hear that many voices 
+                singing the songs of my grandparents and their ancestors. I WILL go one day, and you should too, although tickets
+                are very expensive and sell very quickly.
+            </li>
+          </ul>
+    </div>
+    <hr>
 
-        <div class="right-books-panel">
-            <strong>
-                <h2> Notable Works: </h2>
-                <ul>
-                    <li>The Brave Cowboy (1958)</li>
-                    <li>Desert Solitaire (1968)</li>
-                    <li> Slickrock (1971) </li>
-                    <li>The Monkey Wrench Gang (1975)</li>
-                    <li>Abbey’s Road (1979)</li>
-                    <li>The Fool’s Progress (1988)</li>
-                    <li><abbr title="Published posthumously"> Hayduke Lives! (1990) </abbr></li>
-                </ul>
-            </strong>
-              <p>
-                His best known work is perhaps <em>Desert Solitaire</em>, written in 1968 about his experiences
-                in Utah and lauded for its fierce, poetic imagery. Another is <em> The 
-                Monkey Wrench Gang</em>, a book about environmentalists who sought to protect the wilderness
-                using guerilla-like tactics. Both are now considered necessary reads for any adventurer seeking to understand
-                and protect this beautiful planet we call home before it's too late.
-            </p>
-        </div>
+    <!-- Contact me with questions -->
+    <div class="contact-form" id="contact">
+        <h2>Contact Me</h2>
+        <h4>Send me any questions you have (I will respond in English, or Latvian if selected)!</h4>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name"><br>
 
-        <div class="right-panel">
-            <img src="images/abbey-writing.jpg" class="writing-img">
-            <figcaption> Writing in the desert </figcaption>
-            <p></p>
-            <img src="images/playing-flute.jpg" class="flute">
-            <figcaption> Playing his flute </figcaption>
-        </div>
+            <label for="email">Email:</label>
+            <input type="text" name="email"><br>
 
-    </body>
+            <label for="questions">Questions:</label>
+            <input type="text" name="questions"><br>
+
+            <label for="latvian-response">I prefer Latvian</label>
+            <input type="checkbox" name="latvian-response"><br>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+  
+</body>
+
+  
 </html>
