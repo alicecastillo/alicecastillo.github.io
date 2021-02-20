@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
   <head>
     <title>Riga</title>
     <meta name="Alice's City Guide" content="My webpage talks about my favorite places in and around the city of Riga,
         Latvia, where part of my family is from. It includes guides to hotspots and beautiful scenery, but most importantly
         the places that I love the most. It also incudes an interactive map and quick guide to useful Latvian phrases." />
+    <link rel="stylesheet" href="styles.css">
 
   </head>
   <body>
-      <img src="images/riga-pano.jpg" style="width: 100%; opacity: 60%;" alt="riga skyline" class="img-header">
-    <h1><abbr title="Riga, Latvija">Riga, Latvia</abbr></h1>
+    <div class="nav-header">
+        <h1><abbr title="Riga, Latvija">Riga, Latvia</abbr></h1>
+        <nav class="nav-bar">
+            <a href="#interactive-map">Interactive Map</a> |
+            <a href="#useful-phrases">Useful Phrases</a> |
+            <a href="#eating">Food</a> |
+            <a href="#celebration">Song and Dance Celebration</a> |
+            <a href="#love">Favorite Spots</a> |
+            <a href="#contact">Contact Form</a>
+        </nav>
+    </div>
 
     <!-- Table of Contents/Navigator -->
-    <nav class="nav-bar">
-        <a href="#interactive-map">Interactive Map</a> |
-        <a href="#useful-phrases">Useful Phrases</a> |
-        <a href="#eating">Food</a> |
-        <a href="#love">Favorite Spots</a> |
-        <a href="#celebration">Song and Dance Celebration</a> |
-        <a href="#contact">Contact Form</a>
-    </nav>
     <hr>
 
+    <img src="images/riga-pano.jpg" alt="riga skyline" class="img-header">
+    
     <!-- Embedded Google Maps -->
-    <h2 id="interactive-map">Interactive Map</h2>
-    <div id="map" style="height: 350px; width: 600px;" class="embedded-map"></div>
-    <hr>
+    <div id="interactive-map">
+        <hr>
+        <h2>Interactive Map</h2>
+        <div id="map" class="embedded-map"> </div>
+    </div>
 
     <!-- ****** BELOW CODE USED/ADAPTED FROM EXAMPLE FOUND AT https://developers.google.com/maps/documentation/javascript/adding-a-google-map  ****** -->
     <script>
@@ -42,42 +48,43 @@
 
     <!-- Useful phrases translated -->
     <div id="useful-phrases">
-        <h2>Useful phrases</h2>
-        <table id="translator-table" style="border: 2px solid darkslategray;">
+        <hr>
+        <h2>Useful phrases <em>(Noderīgas frāzes)</em></h2>
+        <table id="translator-table">
             <thead>
                 <tr>
                     <th>English</th>
-                    <th>Latvian</th>
+                    <th><em>Latvian</em></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Hello</td>
-                    <td>Sveiki</td>
+                    <td class="latvian-col">Sveiki</td>
                 </tr>
                 <tr>
                     <td>Thanks</td>
-                    <td>Paldies</td>
+                    <td class="latvian-col">Paldies</td>
                 </tr>
                 <tr>
                     <td>You're (very) welcome / Please</td>
-                    <td>Lūdzu</td>
+                    <td class="latvian-col">Lūdzu</td>
                 </tr>
                 <tr>
                     <td>Good morning/day/night</td>
-                    <td>Labrīt / Labdien / Labvakar</td>
+                    <td class="latvian-col">Labrīt / Labdien / Labvakar</td>
                 </tr>
                 <tr>
                     <td>I don't speak Latvian</td>
-                    <td>Es nerunāju latviski</td>
+                    <td class="latvian-col">Es nerunāju latviski</td>
                 </tr>
             </tbody>
             </table>
     </div>
-    <hr>
 
     <!-- Places to eat or get food -->
     <div class="food" id="eating">
+        <hr>
         <h2>Food</h2>
         <img src="images/market.jpg" alt="riga central market">
         <h3><em><abbr title="Rigas Centraltirgus">Riga Central Market</abbr></em></h3>
@@ -87,39 +94,12 @@
             <li>A large collection of marketplaces, set in a historic site with very old and pretty architecture.</li>
             <li>A good place to get cheap, fresh seafood for meals.</li>
             <li>Warning: You must be careful of pickpocketers! And if you are foreign you will probably be upsold.</li>
-          </ul>
+            </ul>
     </div>
-    <hr>
-
-    <!-- Favorite places -->
-    <div class="favorite-spots" id="love">
-        <h2>Favorite Spots</h2>
-        <div class="canal">
-            <img src="images/canal-district.jpg" alt="canal district">
-            <h3><em><abbr title="Pilsetas Kanals">City Canal</abbr></em></h3>
-            <h4>Cost: $$ | <a href="https://www.lonelyplanet.com/latvia/riga/attractions/pilsetas-kanals-city-canal/a/poi-sig/1466253/360099" target="_blank">Boat Tours</a></h4>
-            <ul>
-                <li>Formerly an old moat, Riga's City Canal is now a favorite spot for leisure.</li>
-                <li>Banked on either side by lovely stretches of green and tall trees, this spot of nature offers a refuge from city bustle.</li>
-                <li>I have loved sitting near the canal and having picnics with my family; you will too!</li>
-              </ul>
-        </div>
-
-        <div class="jurmula">
-            <img src="images/jurmula.jpg" alt="baltic beach">
-            <h3><em><abbr title="Jurmula">The Beach</abbr></em></h3>
-            <h4>Cost: 0 [car], $ [train] | <a href="https://www.latvia.travel/en/city/jurmala-8" target="_blank">More Info</a></h4>
-            <ul>
-                <li>A quick train ride--or car ride--out of Riga will take you to lovely sands in Jūrmala on the Gulf of Riga.</li>
-                <li>You can easily find little pieces of amber scattered among the shells. </li>
-                <li>It is very cold, even in the summer--be ready and bring towels!</li>
-              </ul>
-        </div>
-    </div>
-    <hr>
 
     <!-- Song and dance festival -->
     <div class="song-and-dance-celebration" id="celebration">
+        <hr>
         <h2>Nationwide Song and Dance Celebration</h2>
         <img src="images/song-1.jpg" alt="song and dance festival traditional outfits">
         <img src="images/freedom-1.jpg" alt="riga freedom monument">
@@ -139,29 +119,57 @@
                 singing the songs of my grandparents and their ancestors. I WILL go one day, and you should too, although tickets
                 are very expensive and sell very quickly.
             </li>
-          </ul>
+            </ul>
     </div>
-    <hr>
+
+    <!-- Favorite places -->
+    <div class="favorite-spots" id="love">
+        <hr>
+        <h2>Favorite Spots</h2>
+        <div class="canal">
+            <img src="images/canal-district.jpg" alt="canal district">
+            <h3><em><abbr title="Pilsetas Kanals">City Canal</abbr></em></h3>
+            <h4>Cost: $$ | <a href="https://www.lonelyplanet.com/latvia/riga/attractions/pilsetas-kanals-city-canal/a/poi-sig/1466253/360099" target="_blank">Boat Tours</a></h4>
+            <ul>
+                <li>Formerly an old moat, Riga's City Canal is now a favorite spot for leisure.</li>
+                <li>Banked on either side by lovely stretches of green and tall trees, this spot of nature offers a refuge from city bustle.</li>
+                <li>I have loved sitting near the canal and having picnics with my family; you will too!</li>
+                </ul>
+        </div>
+        <div class="jurmula">
+            <img src="images/jurmula.jpg" alt="baltic beach">
+            <h3><em><abbr title="Jurmula">The Beach</abbr></em></h3>
+            <h4>Cost: 0 [car], $ [train] | <a href="https://www.latvia.travel/en/city/jurmala-8" target="_blank">More Info</a></h4>
+            <ul>
+                <li>A quick train ride--or car ride--out of Riga will take you to lovely sands in Jūrmala on the Gulf of Riga.</li>
+                <li>You can easily find little pieces of amber scattered among the shells. </li>
+                <li>It is very cold, even in the summer--be ready and bring towels!</li>
+                </ul>
+        </div>
+    </div>
+
 
     <!-- Contact me with questions -->
     <div class="contact-form" id="contact">
+        <hr>
         <h2>Contact Me</h2>
         <h4>Send me any questions you have (I will respond in English, or Latvian if selected)!</h4>
         <form>
             <label for="name">Name:</label>
-            <input type="text" name="name"><br>
+            <input type="text" id="name"><br>
 
             <label for="email">Email:</label>
-            <input type="text" name="email"><br>
+            <input type="text" id="email"><br>
 
             <label for="questions">Questions:</label>
-            <input type="text" name="questions"><br>
+            <input type="text" id="questions"><br>
 
             <label for="latvian-response">I prefer Latvian</label>
-            <input type="checkbox" name="latvian-response"><br>
-            <input type="submit" value="Submit">
-          </form>
+            <input type="checkbox" id="latvian-response"><br>
+            <input type="submit" value="Submit" id="submit-form">
+            </form>
     </div>
+
   
 </body>
 
