@@ -1,177 +1,149 @@
 <!DOCTYPE html>
-<html lang="lv">
-  <head>
-    <title>Riga</title>
-    <meta name="Alice's City Guide" content="My webpage talks about my favorite places in and around the city of Riga,
-        Latvia, where part of my family is from. It includes guides to hotspots and beautiful scenery, but most importantly
-        the places that I love the most. It also incudes an interactive map and quick guide to useful Latvian phrases." />
-    <link rel="stylesheet" href="styles.css">
+<head>
+    <title>Alice C (@alicecastillo)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/insta_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-  </head>
-  <body>
     <div class="nav-header">
-        <h1><abbr title="Riga, Latvija">Riga, Latvia</abbr></h1>
-        <nav class="nav-bar">
-            <a href="#interactive-map">Interactive Map</a> |
-            <a href="#useful-phrases">Useful Phrases</a> |
-            <a href="#eating">Food</a> |
-            <a href="#celebration">Song and Dance Celebration</a> |
-            <a href="#love">Favorite Spots</a> |
-            <a href="#contact">Contact Form</a>
-        </nav>
+        <img src="images/header_icon.png" alt="insta-icon" id="insta-icon">
+        <img src="images/insta_name.png" alt="insta-logo" id="insta-logo">
+        <input type="text" placeholder="Search" id="search-box">
+        <img src="images/explore.png" alt="explore-icon" id="explore-icon">
+        <img src="images/heart.png" alt="heart-icon" id="heart-icon">
+        <img src="images/profile_icon.png" alt="iprofile-icon" id="profile-icon">
     </div>
 
-    <!-- Table of Contents/Navigator -->
-    <hr>
-
-    <img src="images/riga-pano.jpg" alt="riga skyline" class="img-header">
-    
-    <!-- Embedded Google Maps -->
-    <div id="interactive-map">
-        <hr>
-        <h2>Interactive Map</h2>
-        <div id="map" class="embedded-map"> </div>
-    </div>
-
-    <!-- ****** BELOW CODE USED/ADAPTED FROM EXAMPLE FOUND AT https://developers.google.com/maps/documentation/javascript/adding-a-google-map  ****** -->
-    <script>
-        function initMap() {
-            const riga= { lat: 56.9515, lng: 24.1132 };
-            const map = new google.maps.Map(document.getElementById("map"), { zoom: 12, center: riga});
-            const marker = new google.maps.Marker({ position: riga, map: map}); }
-    </script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBN0s2zT_9kUTNlDNm60Uo-bQNV_g3Yvc&callback=initMap&libraries=&v=weekly" async
-    ></script>
-    <!-- ****** CITED CODE ENDS ****** -->
-
-
-    <!-- Useful phrases translated -->
-    <div id="useful-phrases">
-        <hr>
-        <h2>Useful phrases <em>(Noderīgas frāzes)</em></h2>
-        <table id="translator-table">
-            <thead>
-                <tr>
-                    <th>English</th>
-                    <th><em>Latvian</em></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Hello</td>
-                    <td class="latvian-col">Sveiki</td>
-                </tr>
-                <tr>
-                    <td>Thanks</td>
-                    <td class="latvian-col">Paldies</td>
-                </tr>
-                <tr>
-                    <td>You're (very) welcome / Please</td>
-                    <td class="latvian-col">Lūdzu</td>
-                </tr>
-                <tr>
-                    <td>Good morning/day/night</td>
-                    <td class="latvian-col">Labrīt / Labdien / Labvakar</td>
-                </tr>
-                <tr>
-                    <td>I don't speak Latvian</td>
-                    <td class="latvian-col">Es nerunāju latviski</td>
-                </tr>
-            </tbody>
-            </table>
-    </div>
-
-    <!-- Places to eat or get food -->
-    <div class="food" id="eating">
-        <hr>
-        <h2>Food</h2>
-        <img src="images/market.jpg" alt="riga central market">
-        <h3><em><abbr title="Rigas Centraltirgus">Riga Central Market</abbr></em></h3>
-        <h4>Cost: $ | <a href="https://www.latvia.travel/en/sight/riga-central-market" target="_blank">Learn More</a></h4>
-        <h4>Monday-Saturday: 8:00am-6:00pm, Sunday: 8:00am-5:00pm</h4>
-        <ul>
-            <li>A large collection of marketplaces, set in a historic site with very old and pretty architecture.</li>
-            <li>A good place to get cheap, fresh seafood for meals.</li>
-            <li>Warning: You must be careful of pickpocketers! And if you are foreign you will probably be upsold.</li>
-            </ul>
-    </div>
-
-    <!-- Song and dance festival -->
-    <div class="song-and-dance-celebration" id="celebration">
-        <hr>
-        <h2>Nationwide Song and Dance Celebration</h2>
-        <img src="images/song-1.jpg" alt="song and dance festival traditional outfits">
-        <img src="images/freedom-1.jpg" alt="riga freedom monument">
-        <img src="images/song-2.jpg" alt="song and dance festival ampitheater">
-        <h3><em><abbr title="Vispārējie latviešu Dziesmu un Deju svētki">Song and Dance Celebration</abbr></em></h3>
-        <h4>Cost: $$$ (in person), FREE (streaming) | <a href="https://www.latvia.travel/en/article/song-and-dance-celebration" target="_blank">Learn More</a></h4>
-        <h4>Next: July 2023</h4>
-        <ul>
-            <li>The most important cultural event in Lativa; held every four years, the Song and Dance Celebration is a gathering
-                of 30,000 Latvians singing traditional songs in unison, wearing traditional Latvian garb.
-            </li>
-            <li>During occupations (especially Soviet) one of the few sanctioned group meetings were for choral gatherings.
-                Here, singing traditional Latvian songs kept pride in and love for Latvia strong, and also allowed men and women
-                to covertly pass information about the status of their hometowns.
-            </li>
-            <li>I have never seen this live, but I've watched the stream, and cried; it is incredible to hear that many voices 
-                singing the songs of my grandparents and their ancestors. I WILL go one day, and you should too, although tickets
-                are very expensive and sell very quickly.
-            </li>
-            </ul>
-    </div>
-
-    <!-- Favorite places -->
-    <div class="favorite-spots" id="love">
-        <hr>
-        <h2>Favorite Spots</h2>
-        <div class="canal">
-            <img src="images/canal-district.jpg" alt="canal district">
-            <h3><em><abbr title="Pilsetas Kanals">City Canal</abbr></em></h3>
-            <h4>Cost: $$ | <a href="https://www.lonelyplanet.com/latvia/riga/attractions/pilsetas-kanals-city-canal/a/poi-sig/1466253/360099" target="_blank">Boat Tours</a></h4>
-            <ul>
-                <li>Formerly an old moat, Riga's City Canal is now a favorite spot for leisure.</li>
-                <li>Banked on either side by lovely stretches of green and tall trees, this spot of nature offers a refuge from city bustle.</li>
-                <li>I have loved sitting near the canal and having picnics with my family; you will too!</li>
-                </ul>
+    <div class="posts">
+        <div class="post">
+            <img src="images/profile_pic.png" alt="alicecastillo" class="profile-pic">
+            <h4> alicecastillo </h4>
+            <img src="images/andromeda.jpg" alt="andromeda-galaxy" class="post-img">
+            <div class="post-icons">
+                <img src="images/like.png" alt="like">
+                <img src="images/comment.png" alt="comment">
+                <img src="images/share.png" alt="share" class="share">
+                <img src="images/bookmark.png" alt="bookmark">
+            </div>
+            <p><strong>81 likes</strong></p>
+            <p><strong>alicecastillo</strong> the milky way > andromeda galaxy </p>
+            <p class="p-time"> 2 HOURS AGO </p>
+            <hr>
+            <p class="p-time"> Add a comment... </p>
+            <img src="images/expand-comments.png" alt="..." class="expand-comment">
         </div>
-        <div class="jurmula">
-            <img src="images/jurmula-2.jpg" alt="baltic beach">
-            <h3><em><abbr title="Jurmula">The Beach</abbr></em></h3>
-            <h4>Cost: 0 [car], $ [train] | <a href="https://www.latvia.travel/en/city/jurmala-8" target="_blank">More Info</a></h4>
-            <ul>
-                <li>A quick train ride--or car ride--out of Riga will take you to lovely sands in Jūrmala on the Gulf of Riga.</li>
-                <li>You can easily find little pieces of amber scattered among the shells. </li>
-                <li>It is very cold, even in the summer--be ready and bring towels!</li>
-                </ul>
+        <div class="post">
+            <img src="images/profile_pic.png" alt="alicecastillo" class="profile-pic">
+            <h4> alicecastillo </h4>
+            <img src="images/timothy-leary.jpg" alt="timothy-leary" class="post-img">
+            <div class="post-icons">
+                <img src="images/like.png" alt="like">
+                <img src="images/comment.png" alt="comment">
+                <img src="images/share.png" alt="share" class="share">
+                <img src="images/bookmark.png" alt="bookmark">
+            </div>
+            <p><strong>777 likes</strong></p>
+            <p><strong>alicecastillo</strong> turn on tune in drop out </p>
+            <p class="p-time"> 4 DAYS AGO </p>
+            <hr>
+            <p class="p-time"> Add a comment... </p>
+            <img src="images/expand-comments.png" alt="..." class="expand-comment">
+        </div>
+        <div class="post">
+            <img src="images/profile_pic.png" alt="alicecastillo" class="profile-pic">
+            <h4> alicecastillo </h4>
+            <img src="images/rocky_mtns.jpg" alt="rocky_mtns" class="post-img">
+            <div class="post-icons">
+                <img src="images/like.png" alt="like">
+                <img src="images/comment.png" alt="comment">
+                <img src="images/share.png" alt="share" class="share">
+                <img src="images/bookmark.png" alt="bookmark">
+            </div>
+            <p><strong>38 likes</strong></p>
+            <p><strong>alicecastillo</strong> rocky mountain hiii </p>
+            <p class="p-time"> 5 DAYS AGO </p>
+            <hr>
+            <p class="p-time"> Add a comment... </p>
+            <img src="images/expand-comments.png" alt="..." class="expand-comment">
+        </div>
+        <div class="suggestions">
+            <p class="suggestions-title"> Suggestions For You </p>
+            <p class="suggestions-see-all"><strong> See All </strong></p>
+            <div class="suggestions-profile">
+                <img src="images/x-out.png" alt="x-out" class="x-out">
+                <img src="images/nobody.png" alt="nobody" class="suggestion-icon">
+                <p><strong>nobody</strong></p>
+                <p class="subtitle">Popular</p>
+                <button class="follow">Follow</button>
+            </div>
+            <div class="suggestions-profile">
+                <img src="images/x-out.png" alt="x-out" class="x-out">
+                <img src="images/ezrider.png" alt="ezrider" class="suggestion-icon">
+                <p><strong>ezrider</strong></p>
+                <p class="subtitle">Followed by ocarow</p>
+                <button class="follow">Follow</button>
+            </div>
+            <div class="suggestions-profile">
+                <img src="images/x-out.png" alt="x-out" class="x-out">
+                <img src="images/stressedt.png" alt="stressedt" class="suggestion-icon">
+                <p><strong>stressedt</strong></p>
+                <p class="subtitle">Trending</p>
+                <button class="follow">Follow</button>
+            </div>
         </div>
     </div>
 
-
-    <!-- Contact me with questions -->
-    <div class="contact-form" id="contact">
+    <div class="stories-bar">
+        <img src="images/profile_pic.png" alt="alicecastillo" id="stories-profile">
+        <h4> alicecastillo </h4>
+        <p id="user-full-name">Alice C</p>
         <hr>
-        <h2>Contact Me</h2>
-        <h4>Send me any questions you have (I will respond in English, or Latvian if selected)!</h4>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name"><br>
-
-            <label for="email">Email:</label>
-            <input type="text" id="email"><br>
-
-            <label for="questions">Questions:</label>
-            <input type="text" id="questions"><br>
-
-            <label for="latvian-response">I prefer Latvian</label>
-            <input type="checkbox" id="latvian-response"><br>
-            <input type="submit" value="Submit" id="submit-form">
-            </form>
+        <p id="stories-txt">Stories &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <strong>Watch All </strong></p> 
+        <div class="stories-userlist">
+            <img src="images/ophelia.png" alt="ophelia" class="userlist-pic">
+            <h4> ophelia </h4>
+            <p> 12 MIN AGO</p>
+            <img src="images/rasmith.png" alt="rasmith" class="userlist-pic">
+            <h4> rasmith </h4>
+            <p> 46 MIN AGO </p>
+            <img src="images/ocarow.png" alt="ocarow" class="userlist-pic">
+            <h4> ocarow </h4>
+            <p> 1 HOUR AGO </p>
+            <img src="images/courtsimmons.png" alt="courtsimmons" class="userlist-pic">
+            <h4> courtsimmons </h4>
+            <p> 1 HOUR AGO </p>
+            <img src="images/theocean.png" alt="theocean" class="userlist-pic">
+            <h4> theocean </h4>
+            <p> 3 HOURS AGO </p>
+            <img src="images/emmibaby.png" alt="emmibaby" class="userlist-pic">
+            <h4> emmibaby </h4>
+            <p> 7 HOURS AGO </p>
+            <img src="images/sevenlionsmusic.png" alt="sevenlionsmusic" class="userlist-pic">
+            <h4> sevenlionsmusic </h4>
+            <p> 8 HOURS AGO </p>
+            <img src="images/astralprojectr.png" alt="astralprojectr" class="userlist-pic">
+            <h4> astralprojectr </h4>
+            <p> 21 HOURS AGO </p>
+        </div>
+        <div class="links">
+            <p>
+                <a href="https://about.instagram.com/" target="_">About -</a>
+                <a href="https://help.instagram.com/" target="_">Support -</a>
+                <a href="https://about.instagram.com/blog" target="_">Press -</a>
+                <a href="https://www.instagram.com/developer/" target="_">API -</a>
+                <a href="https://about.instagram.com/about-us/careers/" target="_">Jobs -</a>
+                <a href="https://help.instagram.com/519522125107875" target="_">Privacy -</a>
+                <a href="https://help.instagram.com/581066165581870" target="_">Terms -</a>
+                <a href="https://www.instagram.com/directory/profiles/" target="_">Directory -</a>
+                <a href="https://about.instagram.com/" target="_">Profile -</a>
+                <a href="https://www.instagram.com/directory/hashtags/" target="_">Hashtags -</a>
+                <a href="https://www.instagram.com/explore/locations/" target="_">Language</a>
+            </p>
+            <br>
+            <p>@2018 Instagram</p>
+        </div>
     </div>
 
-  
 </body>
-
-  
-</html>
