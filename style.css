@@ -2,382 +2,301 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: #f4f3f3;
-}
-
-hr {
-    border:  1px solid #e7e6e6;
-}
-
-/* HEADER */
-
-.nav-header {
-    position: fixed;
-    width: 100%;
-    height: 70px;
-    background-color: white;
-    color: black;
-    margin: -20px -30px 0px -10px;
-    border-bottom: 1px solid #e7e6e6;
-    z-index: 20;
-}
-
-/* .header-content {
-    position: fixed;
-    height: 70px;
-    padding-left: 2%;
-    background-color: blue;
-} */
-
-#insta-icon {
-    position: absolute;
-    margin: 2% 1% 0 18%;
-}
-
-#insta-logo {
-    position: absolute;
-    margin: 2% 1% 0 22%;
-}
-
-#search-box {
-    position: absolute;
-    margin: 2% 1% 0 35%;
-}
-
-#explore-icon{
-    position: absolute;
-    margin: 2% 1% 0 65%;
-} 
-#heart-icon {
-    position: absolute;
-    margin: 2% 1% 0 70%;
-} 
-#profile-icon {
-    position: absolute;
-    margin: 2% 1% 0 75%;
-}
-
-input { /* solution for input found: https://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form */
-    background: url(images/search-icon.png) no-repeat scroll 7px 7px;
-    padding-left:30px;
-}
-
-input:active, input:focus{
-    background: url(images/search-icon-mag.png) no-repeat scroll 5px 5px;
-}
-
-/* LEFT SIDE BAR (POSTS FEED) */
-
-.posts {
-    position: fixed;
-    /* border: 2px solid blue; */
-    overflow: scroll;
-    scrollbar-width: none; /* line taken from: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
-    height: 95%;
-}
-
-.post {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    border: 2px solid #e7e6e6;
-    width: 90%;
-}
-
-.post > h4 {
-    margin: 3% 0 1% 50px;
-}
-
-.post > p {
-    margin: 2% 0 -1% 3%;
-}
-
-.p-time {
-    color: #bbbbbb;
-    font-size: small;
-}
-
-.post > hr {
-    width: 95%;
-    margin-top: 2%;
-}
-
 /* *** taken from: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 ::-webkit-scrollbar {
     display: none;
   }
 /* *** end borrowed code */
 
-.profile-pic {
-    margin: 1%;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-}
-
-.post-img {
-    margin-top: 2%;
+/* HEADER */
+.nav-header {
+    position: fixed;
     width: 100%;
-    height: 70%;
-}
-
-.post-icons {
-    width: 100%;
-    height: 30px;
-    padding-left: 2%;
-}
-
-.share {
-    margin-right: 73%;
-}
-
-.expand-comment {
-    margin-left: 84%;
-    margin-bottom: 4%;
-    margin-top: -1%;
-    position: absolute;
-}
-
-
-.suggestions {
-    margin: 5% 10% 5% 5%;
-    width: 90%;
-    height: 35%;
-    background-color: white;
-    border: 2px solid #e7e6e6;
-    flex-direction: column;
-    text-align: center;
-}
-
-.suggestions-title {
-    margin: 3%;
-    color: #989898;
-    position: absolute;
-}
-
-.suggestions-see-all {
-    margin: 3%;
-    margin-left: 85%;
-    color: #349ffb;
-}
-
-.suggestions-profile {
-    width: 26%;
-    height: 70%;
-    margin: 0 3% 0 3%;
-    border:  2px solid #e7e6e6;
-    float: left;
-    border-radius: 3px;
-}
-
-button {
-    background-color: #349ffb;
+    left: 0;
+    top: 0;
+    height: 110px;
+    background-color: #041B00;
     color: white;
-    border-radius: 3px;
-    width: 80%;
-    padding: 5px 15px 5px 15px;
-    margin: 2% 10% 2% 10%;
-    border: none;
+    border-bottom: 1px solid #e7e6e6;
+    display: none;
+    flex-direction: column;
+    z-index: 20;
 }
 
-.suggestion-icon {
-    margin: 12% 30% 0 30%;
-}
-
-.x-out {
-    margin: 2% 0 1% 19%;
-    position: absolute;
-}
-
-.suggestions-profile > p {
-    margin-bottom: 10%;
-}
-
-.subtitle {
-    color: #989898;
-    font-size: small;
-    margin-top: -7%;
-}
-
-/* RIGHT SIDE */
-
-
-.header-content {
-    padding: 15px 10% 5px 10%;
-    display: flex;
-    height: 40px;
-    width: 100%;
-}
-
-.header-icon {
-    padding: 5px 5% 5px 5%;
-}
-
-#search-box {
-    align-self: center;
-    height: 28px;
-    width: 150px;
-    text-align: center;
-    border: 2px solid #e7e6e6;
-    background-color: #fafafa;
-    color: gray;
+#wwf-logo {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    border: 3px solid #041B00;
     border-radius: 2px;
 }
 
-::placeholder {
-    color: #bababa;
+.nav-header > button {
+    background-color: #041B00;
+    color: #e7e6e6;
+    font-size: x-large;
+    padding: 8px 10px 8px 10px;
+    margin: 3% 2% 1% 1%;
+    border: none;
+    float: left;
 }
 
-#stories-profile {
-    margin: 1%;
-    position: absolute;
+#our-work-button {
+    margin-left: 15%;
 }
 
-.stories-userlist {
-    margin-top: 15%;
-    margin-bottom: 2%;
-    height: 40%;
-    width: 100%;
+#member-button {
+    background-color: #F1502A;
+    margin-right: 5%;
+    border-radius: 3px;
+    float: right;
+}
+
+/* MAIN PAGE CONTENT */
+.main-page {
+    width: 94%;
+    left: 3%;
+    height: 100%;
+    position: fixed;
     overflow: scroll;
-    border-bottom: 1px solid #e7e6e6;
+    top: 108px;
 }
 
-.stories-bar > h4 {
-    margin: 2% 0 5% 60px;
-}
-
-#user-full-name {
-    margin: -5% 0 5% 60px;
-    color: #a9a9a9;
-    font-size: small;
-}
-
-.stories-userlist > h4 {
-    margin: -13% 0 11% 60px;
-}
-
-.stories-userlist > h3 {
-    margin-bottom: 5%;
-    color: #a9a9a9;
-}
-
-.stories-userlist > p {
-    margin: -11% 0 4% 60px;
-    color: #a9a9a9;
-    font-size: small;
-}
-
-#stories-txt {
-    color: #989898;
-    margin: 2% 0 5% 0;
+.mission {
+    width: 90%;
+    height: 12%;
+    left: 5%;
     position: absolute;
+    top: 20px;
+    background-image: url("images/pano.jpeg");
+    color: #e7e6e6;
+    border: 5px solid #041B00;
+    text-align: center;
 }
 
-.userlist-pic {
-    margin: 1%;
+.help {
+    flex-direction: column;
+    width: 70%;
+    left: 15%;
+    height: 30%;
+    position: absolute;
+    top: 22%;
 }
 
-a:link, a:visited {
-    text-decoration: none;
+.help > h2, .articles > h2, .petitions > h2 {
+    font-size: xx-large;
+    /* margin-left: 30%; */
+    text-align: center;
+    margin: 0;
 }
 
-.links {
-    font-size: smaller;
-    width: 80%;
+hr {
+    width: 35%;
+    border: 1px solid darkgrey;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.links * {
-    color: #dbdbdb;
+.help-text {
+    width: 20%;
+    height: 70%;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 5%;
+    float: left;
+    background-color: pink;
 }
 
 
-/* selects screens between 400 and 800 px wide, or "medium" sized screens like tablets */
-@media only screen and (min-width: 200px) and (max-width: 800px) {
-    .stories-bar * {
-        visibility: hidden;
-        display: none;
-    }
+.help-img {
+    float: left;
+    margin: 2% 3% 1% 3%;
+    opacity: 0.9;
+}
 
-    #stories-profile {
-        display: none;
-    }
+.help-img:hover {
+    width: 265px;
+    height: 250px;
+}
 
-    .posts {
-        margin-top: 5%;
-        padding: 3% 5% 3% 5%;
-        width: 87%;
-        margin-left: auto;
-        margin-right: auto;
-        z-index: 15;
-    }
+.articles {
+    flex-direction: column;
+    width: 91%;
+    height: 85%;
+    left: 5%;
+    position: absolute;
+    top: 70%;
+}
 
-    .post {
-        height: 80%;
-        min-height: 600px;
-        width: 100%;
-        margin-bottom: 5%;
-    }
+.article {
+    flex-direction: column;
+    width: 98%;
+    height: 65%;
+    left: 1%;
+    position: absolute;
+    border-radius: 8px;
+    background: #041B00;
+    color: #e7e6e6;
+}
 
-    .suggestions {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        margin-bottom: 5%;
-    }
+.article-button {
+    background-color: #F1502A;
+    color: #e7e6e6;
+    border-radius: 3px;
+    font-size: x-large;
+    padding: 8px 10px 8px 10px;
+    border: none;
+    float: center;
+}
 
-    .header-content {
-        margin-left: auto;
-        margin-right: auto;
-        width: 85%;
-    }
+.article-txt > h3 {
+    font-size: xx-large;
+    margin-bottom: 0;
+}
 
-    .suggestions {
-        height: 25%;
-    }
+.article-img {
+    float: left;
+    width: 40%;
+    padding: 1%;
+}
 
-    #insta-icon {
-        position: absolute;
-        margin: 3% 1% 0 10%;
-    }
-    
-    #insta-logo {
-        position: absolute;
-        margin: 3% 1% 0 15%;
-    }
-    
-    #search-box {
-        position: absolute;
-        margin: 3% 1% 0 35%;
-    }
+.article-txt {
+    float: left;
+    width: 54%;
+    padding-top: 1%;
+}
 
-  }
-  
-  /* selects screens wider than 600 px, and also selects all landscape screens. */
-  @media only screen and (min-width: 800px) {
-    .stories-bar {
-        margin: 5% 15% 5% 57%;
-        position: fixed;
-        width: 23%;
-        height: 95%;
-    }
+.petitions {
+    flex-direction: column;
+    width: 90%;
+    height: 120%;
+    left: 5%;
+    position: absolute;
+    top: 140%;
+}
 
-    .stories-bar > p {
-        margin: -5px 0 -5px 0;
-    }
+.petition-txt {
+    height: 62%;
+    float: left;
+    width: 48%;
+    margin-right: 1%;
+    padding: 1% 2% 1% 2%;
+    border-radius: 8px;
+    color: black;
+    background-color: #D0D0D0;
+}
 
-    .posts {
-        margin: 3% 43% 5% 15%;
-        width: 42%;
-    }
+.petition-form {
+    height: 62%;
+    text-align: center;
+    float: left;
+    width: 42%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 8px;
+    color: #e7e6e6;
+    background-color: #041B00;
+    padding: 1%;
+}
 
-    .post {
-        margin: 5% 10% 5% 5%;
-        height: 92%;
-        min-height: 650px;
-    }
+.petitions > h2, .petitions > h3 {
+    text-align: center;
+}
 
-    .header-content {
-        margin: 0 25% 0 15%;
-        width: 45%;
-    }
-  }
+#submit-form {
+    background-color: #F1502A;
+    color: #e7e6e6;
+    border-radius: 3px;
+    font-size: larger;
+    padding: 8px 10px 8px 10px;
+    border: none;
+    float: center;
+}
+
+/* COOKIE BAR */
+.cookie-bar {
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #333333;
+    display: none;
+}
+
+.cookie-bar > p {
+    text-align: center;
+    margin-right: 15%;
+    /* margin: 2% 0 1% 20%; */
+    color: #dfdfdf;
+}
+
+
+.cookie-button {
+    background-color: #4F9B43;
+    color: white;
+    border-radius: 3px;
+    padding: 8px 20px 8px 20px;
+    margin: 2% 0 1% 0;
+    border: none;
+    position: absolute;
+    bottom: 1%;
+}
+
+#no-thanks {
+    right: 12%;
+    background-color: grey;
+}
+
+#allow-all {
+    right: 21%;
+}
+
+
+/* BEFORE PAGE ENTRY */
+.opener {
+    width: 100%;
+    height: 100%;
+    background-color: #041B00;
+    color: #e1e1e1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 12%;
+}
+
+.img-opener-main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* max-width: 55%;
+    max-height: 10%; */
+}
+
+.side-header {
+    width: 45%;
+    height: 80%;
+    position: fixed;
+    right: 0;
+    top: 10%;
+    color: white;
+}
+
+.side-header > img {
+    margin-bottom: 10%;
+}
+
+.side-header > h1 {
+    font-size: 52px;
+}
+
+.side-header > button {
+    background-color: #e1e1e1;
+    color: darkslategray;
+    border-radius: 3px;
+    padding: 15px 25px 15px 25px;
+    font-size: larger;
+    font-weight: bold;
+    margin: 2% 0 1% 0;
+    border: none;
+}

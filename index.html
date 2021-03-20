@@ -1,149 +1,158 @@
 <!DOCTYPE html>
 <head>
-    <title>Alice C (@alicecastillo)</title>
+    <title>WWF - Endangered Species Conservation | World Wildlife Fund</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/insta_logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-    <div class="nav-header">
-        <img src="images/header_icon.png" alt="insta-icon" id="insta-icon">
-        <img src="images/insta_name.png" alt="insta-logo" id="insta-logo">
-        <input type="text" placeholder="Search" id="search-box">
-        <img src="images/explore.png" alt="explore-icon" id="explore-icon">
-        <img src="images/heart.png" alt="heart-icon" id="heart-icon">
-        <img src="images/profile_icon.png" alt="iprofile-icon" id="profile-icon">
+    <!-- HEADER -->
+    <div class="nav-header" id="header">
+        <a href="https://www.worldwildlife.org/"><img src="images/wwf_logo.png" alt="wwf" id="wwf-logo"></a>
+        <button id="our-work-button" onclick="location.href='#mission-div'"> Our Work </button>
+        <button onclick="location.href='#ways-to-help'"> Ways To Help </button>
+        <button onclick="location.href='#conservation-news'"> Conservation News </button>
+        <button onclick="location.href='#take-action'"> Take Action </button>
+        <button id="member-button" onclick="location.href='https://help.worldwildlife.org/hc/en-us/articles/360008011013-WWF-membership';"> Become A Member </button>
     </div>
 
-    <div class="posts">
-        <div class="post">
-            <img src="images/profile_pic.png" alt="alicecastillo" class="profile-pic">
-            <h4> alicecastillo </h4>
-            <img src="images/andromeda.jpg" alt="andromeda-galaxy" class="post-img">
-            <div class="post-icons">
-                <img src="images/like.png" alt="like">
-                <img src="images/comment.png" alt="comment">
-                <img src="images/share.png" alt="share" class="share">
-                <img src="images/bookmark.png" alt="bookmark">
-            </div>
-            <p><strong>81 likes</strong></p>
-            <p><strong>alicecastillo</strong> the milky way > andromeda galaxy </p>
-            <p class="p-time"> 2 HOURS AGO </p>
-            <hr>
-            <p class="p-time"> Add a comment... </p>
-            <img src="images/expand-comments.png" alt="..." class="expand-comment">
-        </div>
-        <div class="post">
-            <img src="images/profile_pic.png" alt="alicecastillo" class="profile-pic">
-            <h4> alicecastillo </h4>
-            <img src="images/timothy-leary.jpg" alt="timothy-leary" class="post-img">
-            <div class="post-icons">
-                <img src="images/like.png" alt="like">
-                <img src="images/comment.png" alt="comment">
-                <img src="images/share.png" alt="share" class="share">
-                <img src="images/bookmark.png" alt="bookmark">
-            </div>
-            <p><strong>777 likes</strong></p>
-            <p><strong>alicecastillo</strong> turn on tune in drop out </p>
-            <p class="p-time"> 4 DAYS AGO </p>
-            <hr>
-            <p class="p-time"> Add a comment... </p>
-            <img src="images/expand-comments.png" alt="..." class="expand-comment">
-        </div>
-        <div class="post">
-            <img src="images/profile_pic.png" alt="alicecastillo" class="profile-pic">
-            <h4> alicecastillo </h4>
-            <img src="images/rocky_mtns.jpg" alt="rocky_mtns" class="post-img">
-            <div class="post-icons">
-                <img src="images/like.png" alt="like">
-                <img src="images/comment.png" alt="comment">
-                <img src="images/share.png" alt="share" class="share">
-                <img src="images/bookmark.png" alt="bookmark">
-            </div>
-            <p><strong>38 likes</strong></p>
-            <p><strong>alicecastillo</strong> rocky mountain hiii </p>
-            <p class="p-time"> 5 DAYS AGO </p>
-            <hr>
-            <p class="p-time"> Add a comment... </p>
-            <img src="images/expand-comments.png" alt="..." class="expand-comment">
-        </div>
-        <div class="suggestions">
-            <p class="suggestions-title"> Suggestions For You </p>
-            <p class="suggestions-see-all"><strong> See All </strong></p>
-            <div class="suggestions-profile">
-                <img src="images/x-out.png" alt="x-out" class="x-out">
-                <img src="images/nobody.png" alt="nobody" class="suggestion-icon">
-                <p><strong>nobody</strong></p>
-                <p class="subtitle">Popular</p>
-                <button class="follow">Follow</button>
-            </div>
-            <div class="suggestions-profile">
-                <img src="images/x-out.png" alt="x-out" class="x-out">
-                <img src="images/ezrider.png" alt="ezrider" class="suggestion-icon">
-                <p><strong>ezrider</strong></p>
-                <p class="subtitle">Followed by ocarow</p>
-                <button class="follow">Follow</button>
-            </div>
-            <div class="suggestions-profile">
-                <img src="images/x-out.png" alt="x-out" class="x-out">
-                <img src="images/stressedt.png" alt="stressedt" class="suggestion-icon">
-                <p><strong>stressedt</strong></p>
-                <p class="subtitle">Trending</p>
-                <button class="follow">Follow</button>
-            </div>
+    <!-- OPENING PAGE CONTENT -->
+    <div class="opener" id="open-screen">
+        <img src="images/tiger_cub.png" class="img-opener-main" alt="cub">
+        <div class="side-header"> 
+            <img src="images/wwf_logo.png" alt="logo">
+            <h1> For Nature. </h1>
+            <h1> For People. </h1>
+            <h1> Forever. </h1>
+
+            <button onclick="enterSite()"> Learn More </button>
         </div>
     </div>
 
-    <div class="stories-bar">
-        <img src="images/profile_pic.png" alt="alicecastillo" id="stories-profile">
-        <h4> alicecastillo </h4>
-        <p id="user-full-name">Alice C</p>
-        <hr>
-        <p id="stories-txt">Stories &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <strong>Watch All </strong></p> 
-        <div class="stories-userlist">
-            <img src="images/ophelia.png" alt="ophelia" class="userlist-pic">
-            <h4> ophelia </h4>
-            <p> 12 MIN AGO</p>
-            <img src="images/rasmith.png" alt="rasmith" class="userlist-pic">
-            <h4> rasmith </h4>
-            <p> 46 MIN AGO </p>
-            <img src="images/ocarow.png" alt="ocarow" class="userlist-pic">
-            <h4> ocarow </h4>
-            <p> 1 HOUR AGO </p>
-            <img src="images/courtsimmons.png" alt="courtsimmons" class="userlist-pic">
-            <h4> courtsimmons </h4>
-            <p> 1 HOUR AGO </p>
-            <img src="images/theocean.png" alt="theocean" class="userlist-pic">
-            <h4> theocean </h4>
-            <p> 3 HOURS AGO </p>
-            <img src="images/emmibaby.png" alt="emmibaby" class="userlist-pic">
-            <h4> emmibaby </h4>
-            <p> 7 HOURS AGO </p>
-            <img src="images/sevenlionsmusic.png" alt="sevenlionsmusic" class="userlist-pic">
-            <h4> sevenlionsmusic </h4>
-            <p> 8 HOURS AGO </p>
-            <img src="images/astralprojectr.png" alt="astralprojectr" class="userlist-pic">
-            <h4> astralprojectr </h4>
-            <p> 21 HOURS AGO </p>
+    <!-- MAIN PAGE CONTENT -->
+    <div class="main-page" id="mainPage">
+        <div class="mission" id="mission-div">
+            <h2> WWF's Mission </h2>
+            <h3> Our mission is to conserve nature and reduce the most pressing threats to the diversity of life on Earth. </h3>
         </div>
-        <div class="links">
-            <p>
-                <a href="https://about.instagram.com/" target="_">About -</a>
-                <a href="https://help.instagram.com/" target="_">Support -</a>
-                <a href="https://about.instagram.com/blog" target="_">Press -</a>
-                <a href="https://www.instagram.com/developer/" target="_">API -</a>
-                <a href="https://about.instagram.com/about-us/careers/" target="_">Jobs -</a>
-                <a href="https://help.instagram.com/519522125107875" target="_">Privacy -</a>
-                <a href="https://help.instagram.com/581066165581870" target="_">Terms -</a>
-                <a href="https://www.instagram.com/directory/profiles/" target="_">Directory -</a>
-                <a href="https://about.instagram.com/" target="_">Profile -</a>
-                <a href="https://www.instagram.com/directory/hashtags/" target="_">Hashtags -</a>
-                <a href="https://www.instagram.com/explore/locations/" target="_">Language</a>
-            </p>
-            <br>
-            <p>@2018 Instagram</p>
+        <div class="help" id="ways-to-help">
+            <!-- <hr> -->
+            <h2> Ways You Can Help</h2>
+            <hr>
+            <!-- <div class="help-text">
+                <p>
+                    Help us.
+                </p>
+            </div> -->
+            <a href="https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions.aspx"><img src="images/adopt.png" class="help-img" alt="gorilla"></a>
+            <a href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2104OQ18299A01180RX"><img src="images/donate.png" class="help-img" alt="whale"></a>
+            <a href="https://www.worldwildlife.org/about/careers?_ga=2.226208538.1227641196.1616139369-557449092.1616139369"><img src="images/join_us.png" class="help-img" alt="elephant"></a>
+        </div>
+        <div class="articles" id="conservation-news">
+            <h2> Conservation News </h2>
+            <hr>
+            <div class="article">
+                <img src="images/one_sq_foot.jpeg" class="article-img" alt="great-plains">
+                <div class="article-txt">
+                    <h3> ONE SQUARE FOOT </h3>
+                    <p>
+                        Botanica by Air Wick, Air Wick® Scented Oils and WWF have 
+                        launched a three-year partnership that will reseed 1 billion square feet (~23,000 acres) of previously disturbed 
+                        grasslands and wildflower habitats in the Northern Great Plains. The “One Square Foot” campaign will aim to provide 
+                        food and shelter for pollinators, grassland birds, and the many other species that are native to the region.
+                        <br><br>
+                        “Grasslands are some of the most threatened habitats on the planet. Each year hundreds of thousands of acres of the Northern Great 
+                        Plains are plowed up for row crop agriculture,” said Martha Kauffman, vice president of WWF’s Northern Great Plains program. 
+                        “Our collaboration with Air Wick to reseed marginal croplands back to native grass and wildflowers will benefit wildlife and 
+                        help ranchers achieve their goals.”
+                        <br><br>
+                        Since 2009....
+                    </p>
+                </div>
+                <a href="https://www.worldwildlife.org/pages/one-square-foot" target="_"><button class="article-button"> Continue Reading </button></a>
+            </div>
+        </div>
+        <div class="petitions" id="take-action">
+            <h2> Take Action</h2>
+            <h3>Protect the Arctic Wildlife Refuge</h3>
+            <hr>
+            <div class="petition-txt">
+                <p>
+                    Dear<em> (Your representative's name), </em>
+                    <br><br>
+                    I am writing to ask you to cosponsor H.R. 544, the Stop Arctic Ocean Drilling Act. This legislation, introduced by 
+                    Rep. Jared Huffman (CA-2), would:
+                    <ul>
+                        <li>Ban any new leases for exploration, development or production of natural gas, oil 
+                            and all other minerals located in the Arctic Ocean Planning Areas of the Outer Continental Shelf</li>
+                        <li>Block renewal of such leases for exploration, development or production of natural gas, oil 
+                            and all other minerals</li>
+                        <li>Fund restoration and clean-up of damaged environments</li>
+                        <li>Provide economic incentives for renewable energy </li>
+                    </ul>
+                    Effectively, this legislation 
+                    would make the Arctic off-limits for all future oil and gas drilling.
+                    <br><br>
+                    Despite widespread public support from Americans who want to protect the Arctic Ocean and its important ecosystems from the dangers of oil and gas
+                    activities, and a federal court ruling which reinstates the Obama-era protections, there are ongoing efforts to open 120 million acres of 
+                    the Arctic Ocean to oil and gas development.
+                    <br><br>
+                    Congress must step in and act to permanently protect the Arctic Ocean. We must protect the unique and rich wildlife and communities 
+                    that depend on this environment for survival.
+                    <br><br>
+                    Please cosponsor the Stop Arctic Ocean Drilling Act and help protect the Arctic from the destructive impacts that future oil and gas 
+                    development would certainly bring.
+                    <br><br>
+                    Sincerely,<br>
+                    <em> (Your name here) </em>
+
+                </p>
+            </div>
+            <div class="petition-form">
+                <img src="images/arctic.png" alt="arctic">
+                <br>
+                <h4> Sign The Petition</h4>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name"><br>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email"><br>
+                    <br>
+                    <label for="questions">Zip Code:</label>
+                    <input type="text" id="zipcode"><br>
+                    <br>
+                    <label for="keep-updated">Keep Me Updated</label>
+                    <input type="checkbox" id="keep-updated"><br>
+                    <br>
+                    <input type="submit" value="Submit" id="submit-form">
+                </form>
+            </div>
         </div>
     </div>
 
+    <!-- COOKIES BAR -->
+    <div class="cookie-bar" id="cookies">
+        <p> We use cookies to enhance your experience. By clicking “Allow All” you agree to our Privacy Policy. </p>
+        <button class="cookie-button" id="allow-all" onclick="disappearCookie()">Allow All</button>
+        <button class="cookie-button" id="no-thanks" onclick="disappearCookie()">No Thanks</button>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script>
+        document.getElementById("header").style.display = "none";
+        document.getElementById("cookies").style.display = "none";
+        document.getElementById("mainPage").style.display = "none";
+
+        function disappearCookie() {
+            document.getElementById("cookies").style.display = "none";
+        }
+        
+        function enterSite() {
+            document.getElementById("open-screen").style.display = "none";
+            document.getElementById("header").style.display = "block";
+            document.getElementById("cookies").style.display = "block";
+            document.getElementById("mainPage").style.display = "block";
+        }
+    </script>
 </body>
