@@ -1,152 +1,116 @@
 <!DOCTYPE html>
 <head>
-    <title>WWF - Endangered Species Conservation | World Wildlife Fund</title>
+    <title> Endangered Species List </title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/fws_logo.png" />
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/wwf_icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <!-- HEADER -->
-    <div class="nav-header" id="header">
-        <a href="https://www.worldwildlife.org/"><img src="images/wwf_logo.png" alt="wwf" id="wwf-logo"></a>
-        <button id="our-work-button" onclick="location.href='#mission-div'"> Our Work </button>
-        <button onclick="location.href='#ways-to-help'"> Ways To Help </button>
-        <button onclick="location.href='#conservation-news'"> Conservation News </button>
-        <button onclick="location.href='#take-action'"> Take Action </button>
-        <button id="member-button" onclick="location.href='https://help.worldwildlife.org/hc/en-us/articles/360008011013-WWF-membership';"> Become A Member </button>
+    <div class="header">
+        <h1> U.S. Federally Endangered Species By State </h1>
+        <a target="_blank" href="https://ecos.fws.gov/ecp/report/adhocDocumentation?catalogId=species&reportId=species">
+            <img src="images/fws_logo.png" alt="fws_logo" id="fws-logo"/>
+        </a>
     </div>
-
-    <!-- OPENING PAGE CONTENT -->
-    <div class="opener" id="open-screen">
-        <img src="images/tiger_cub.png" class="img-opener-main" alt="cub">
-        <div class="side-header"> 
-            <img src="images/wwf_logo.png" alt="logo">
-            <h1> For Nature. </h1>
-            <h1> For People. </h1>
-            <h1> Forever. </h1>
-
-            <button onclick="enterSite()"> Learn More </button>
-        </div>
-    </div>
-
-    <!-- MAIN PAGE CONTENT -->
-    <div class="main-page" id="mainPage">
-        <div class="mission" id="mission-div">
-            <h2> WWF's Mission </h2>
-            <h3> Our mission is to conserve nature and reduce the most pressing threats to the diversity of life on Earth. </h3>
-        </div>
-        <div class="help" id="ways-to-help">
-            <h2> Ways You Can Help</h2>
-            <hr>
-            <a href="https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions.aspx"><img src="images/adopt.png" class="help-img" alt="gorilla"></a>
-            <a href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2104OQ18299A01180RX"><img src="images/donate.png" class="help-img" alt="whale"></a>
-            <a href="https://www.worldwildlife.org/about/careers?_ga=2.226208538.1227641196.1616139369-557449092.1616139369"><img src="images/join_us.png" class="help-img" alt="elephant"></a>
-        </div>
-        <div class="articles" id="conservation-news">
-            <h2> Conservation News </h2>
-            <hr>
-            <div class="article">
-                <img src="images/one_sq_foot.jpeg" class="article-img" alt="great-plains">
-                <div class="article-txt">
-                    <h3> ONE SQUARE FOOT </h3>
-                    <p>
-                        Botanica by Air Wick, Air Wick® Scented Oils and WWF have 
-                        launched a three-year partnership that will reseed 1 billion square feet (~23,000 acres) of previously disturbed 
-                        grasslands and wildflower habitats in the Northern Great Plains. The “One Square Foot” campaign will aim to provide 
-                        food and shelter for pollinators, grassland birds, and the many other species that are native to the region.
-                        <br><br>
-                        “Grasslands are some of the most threatened habitats on the planet. Each year hundreds of thousands of acres of the Northern Great 
-                        Plains are plowed up for row crop agriculture,” said Martha Kauffman, vice president of WWF’s Northern Great Plains program. 
-                        “Our collaboration with Air Wick to reseed marginal croplands back to native grass and wildflowers will benefit wildlife and 
-                        help ranchers achieve their goals.”
-                        <br><br>
-                        Since 2009....
-                    </p>
-                </div>
-                <button class="article-button" onclick="location.href='https://www.worldwildlife.org/pages/one-square-foot';"> Continue Reading </button>
-            </div>
-        </div>
-        <div class="petitions" id="take-action">
-            <h2> Take Action</h2>
-            <h3>Protect the Arctic Wildlife Refuge</h3>
-            <hr>
-            <div class="petition-txt">
-                <p>
-                    Dear<em> (Your representative's name), </em>
-                    <br><br>
-                    I am writing to ask you to cosponsor H.R. 544, the Stop Arctic Ocean Drilling Act. This legislation, introduced by 
-                    Rep. Jared Huffman (CA-2), would:</p>
-                    <ul>
-                        <li>Ban any new leases for exploration, development or production of natural gas, oil 
-                            and all other minerals located in the Arctic Ocean Planning Areas of the Outer Continental Shelf</li>
-                        <li>Block renewal of such leases for exploration, development or production of natural gas, oil 
-                            and all other minerals</li>
-                        <li>Fund restoration and clean-up of damaged environments</li>
-                        <li>Provide economic incentives for renewable energy </li>
-                    </ul><p>
-                    Effectively, this legislation 
-                    would make the Arctic off-limits for all future oil and gas drilling.
-                    <br><br>
-                    Despite widespread public support from Americans who want to protect the Arctic Ocean and its important ecosystems from the dangers of oil and gas
-                    activities, and a federal court ruling which reinstates the Obama-era protections, there are ongoing efforts to open 120 million acres of 
-                    the Arctic Ocean to oil and gas development.
-                    <br><br>
-                    Congress must step in and act to permanently protect the Arctic Ocean. We must protect the unique and rich wildlife and communities 
-                    that depend on this environment for survival.
-                    <br><br>
-                    Please cosponsor the Stop Arctic Ocean Drilling Act and help protect the Arctic from the destructive impacts that future oil and gas 
-                    development would certainly bring.
-                    <br><br>
-                    Sincerely,<br>
-                    <em> (Your name here) </em>
-                </p>
-            </div>
-            <div class="petition-form">
-                <img src="images/arctic.png" alt="arctic">
-                <br>
-                <h4> Sign The Petition</h4>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name"><br>
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email"><br>
-                    <br>
-                    <label for="zipcode">Zip Code:</label>
-                    <input type="text" id="zipcode"><br>
-                    <br>
-                    <label for="keep-updated">Keep Me Updated</label>
-                    <input type="checkbox" id="keep-updated"><br>
-                    <br>
-                    <input type="submit" value="Submit" id="submit-form">
+    <div class="body-div">
+        <div class="selection-body-div">
+            <div class="select-state">
+                <h2> Select U.S. State: </h2>
+                <form id="state-form">
+                    <select name="us-states" id="us-state-choices"></select>
+                    <input type="submit" value="Get Species" id="submit-form">
                 </form>
             </div>
         </div>
+        <h2 id="showing-results"></h2>
+        <a href="https://www.fws.gov/endangered/about/listing-status-codes.html" target="_blank"><h5>What do these mean?</h5></a>
+        <!-- <h4 id="showing-results"></h4> -->
+        <div class="table-div">
+            <table id="table" class="table">
+                <tr>
+                <th>Common Name</th>
+                <th>Scientific Name</th>
+                <th>ESA Status</th>
+                <th>URL</th>
+                </tr>
+            </table>
+            <!-- <table id="key" class="key">
+                <tr>
+                <th>Key</th>
+                </tr>
+            </table> -->
+        </div>
+    
+    
     </div>
 
-    <!-- COOKIES BAR -->
-    <div class="cookie-bar" id="cookies">
-        <p> We use cookies to enhance your experience. By clicking “Allow All” you agree to our Privacy Policy. </p>
-        <button class="cookie-button" id="allow-all" onclick="disappearCookie()">Allow All</button>
-        <button class="cookie-button" id="no-thanks" onclick="disappearCookie()">No Thanks</button>
-    </div>
-
-
-    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        document.getElementById("header").style.display = "none";
-        document.getElementById("cookies").style.display = "none";
-        document.getElementById("mainPage").style.display = "none";
+        let us_states = [
+            'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut',
+            'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',
+            'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 
+            'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 
+            'North Dakota','Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 
+            'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+        ]
 
-        function disappearCookie() {
-            document.getElementById("cookies").style.display = "none";
+        // make call to ECOS API
+        $('#state-form').submit(function( event ) {
+            event.preventDefault();
+            let selected_state = $('#us-state-choices option:selected').text()
+            callECOS(selected_state);
+        })
+
+        function callECOS(selected_state) {
+            $.ajax({
+                type: "GET",
+                url: "https://ecos.fws.gov/ecp/pullreports/catalog/species/report/species/export?format=json" +
+                     "&columns=%2Fspecies%40cn%2Csn%2Cstatus%2Clisting_date&sort=%2Fspecies%40cn%20asc%3B%2Fspecies%40sn%20asc" +
+                     "&filter=%2Fspecies%2Frange_state%40name%20%3D%20'" + selected_state + "'",
+                success: function(response) {
+                    console.log(response);
+                    // $("#table-div").removeAttr("hidden");
+                    let rows = response.data.map(function(row_data) {
+                        var row = {}
+                        row['com_name'] = row_data[0]
+                        row['sci_name'] = row_data[1].value
+                        row['status'] = row_data[2]
+                        row['url'] = row_data[1].url
+                        return (row)
+                    })
+                    console.log(rows)
+                    $('tr[name="body-tr"]').remove();
+                    for (var i in rows) {
+                        $("#table").append("<tr name='body-tr' id='tr-" + i +"'></tr>");
+                        $("#showing-results").html("Showing results for: " + selected_state);
+                        $("#tr-"+i).append("<td>" +  rows[i].com_name + "</td>");
+                        $("#tr-"+i).append('<td class="sci-name">' +  rows[i].sci_name + '</td>');
+                        $("#tr-"+i).append("<td>" +  rows[i].status + "</td>");
+                        $("#tr-"+i).append("<td><a href='" +  rows[i].url + "' target='_'>Link</a></td>");
+
+                        // assign color based on name
+                        class_name = rows[i].status.toLowerCase().replace(" ", "-");
+                        console.log(class_name);
+                        $("#tr-" + i).addClass(class_name);
+
+                    }
+                },
+                error: function() {
+                    alert("Error sending data to server. Please try again");
+                }
+            });
         }
-        
-        function enterSite() {
-            document.getElementById("open-screen").style.display = "none";
-            document.getElementById("header").style.display = "block";
-            document.getElementById("cookies").style.display = "block";
-            document.getElementById("mainPage").style.display = "block";
-        }
+
+
+        // load the states in on page load
+        $(document).ready(function() {
+            for (var i in us_states)
+                $('#us-state-choices').append('<option value="' + i + '">' + us_states[i] + '</option>');   
+
+            // set default as Alabama (on load, show)
+            callECOS(us_states[0]);
+        })
     </script>
+
 </body>
